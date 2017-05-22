@@ -1,0 +1,152 @@
+<!-- Coin Flip HTML -->
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Shark Triva</title>
+
+  </head>
+  <body>
+  <div class="header"></div>
+
+     <button id="start">Start</button>
+
+    <div class="container">
+      <div id="second">
+        <h1>Shark <img src="/Users/coreyfurman/Desktop/TriviaGame/assets/images/shark-white.png">Trivia</h1>
+        <br>
+        <div>
+         <h2>Time Remaining: <div id="countdown">01:00</div></h2>
+
+        </div>
+          <h2>WHAT IS A SHARK'S CEREBRUM RESPONSIBLE FOR?</h2> 
+          <form id="q1">
+            <div class="radio">
+              <label><input type="radio" name="optradio">Coordinating body movement</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Learning and memory</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">Skin Protection</label>
+            </div>
+          </form>
+       
+
+        <br>
+          <h2>WHAT'S THE NAME OF THE MASSIVE GREAT WHITE THAT WAS CAUGHT OFF THE COAST OF CUBA IN 1945?</h2> 
+          <form id="q2">
+            <div class="radio">
+              <label><input type="radio" name="optradio">El Monstruo</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">El Coloso</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">The Megladon</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">El Gigantesco</label>
+            </div>
+          </form>
+
+           <br>
+                <h2>ABOUT HOW MANY TEETH DOES A GREAT WHITE HAVE?</h2> 
+                <form id="q3">
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">150</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">300</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">550</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">1000</label>
+                  </div>
+                </form>
+
+                <br>
+                <h2>WHICH OF THESE SHARKS IS A CLOSE RELATIVE OF THE OCEANIC WHITETIP?</h2> 
+                <form id="q4">
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Carribean reef shark</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Thresher shark</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Goblin shark</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Megamouth shark</label>
+                  </div>
+                </form>
+
+                 <br>
+                <h2>THIS SPECIES OF HAMMERHEAD SHARK LOOKS NEARLY IDENTICAL TO SCALLOPED HAMMERHEAD SHARKS, EXCEPT FOR THE NUMBER OF VERTEBRAE ON THEIR BACKBONES.</h2> 
+                <form id="q5">
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Great Hammerhead</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Carolina Hammerhead</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Mallethead</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="optradio">Winghead</label>
+                  </div>
+                </form>
+                <br>
+                <br>
+                <div>
+                  <button id="done">Done</button>
+                </div>
+
+            <br>
+            <br>
+            <br>
+            
+      </div>
+    </div>
+    
+<div class="container">
+   <div id="third">
+        <h1>Results</h1>
+        <div>
+          <h3 class="good">Correct:</h3>
+          <!-- Our correct answers count -->
+          <div id="correct-answers"></div>
+        </div>
+        <div id="bad">
+          <h3 class="bad">Incorrect:</h3>
+          <!-- Our incorrect answers count -->
+          <div id="incorrect-answers"></div>
+        </div>
+        <div id="nope">
+          <h3 class="section-title">Unanswered:</h3>
+          <!-- Our unanswered count -->
+          <div id="unanswered-qs"></div>
+        </div>
+      </div>
+    </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="app.js"></script>
+
+  </body>
+
+</html>
