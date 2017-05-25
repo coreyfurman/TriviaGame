@@ -14,12 +14,18 @@
   </head>
   <body>
   <div class="header"></div>
-
-     <button id="start">Start</button>
+    
+    <div class="container">
+    <h1>Shark <img src="/Users/coreyfurman/Desktop/TriviaGame/assets/images/shark-white.png">Trivia</h1>
+    </div>
+    <br>
+    <div class="container">
+    <button id="start">Start</button>
+    </div>
 
     <div class="container">
-      <div id="second">
-        <h1>Shark <img src="/Users/coreyfurman/Desktop/TriviaGame/assets/images/shark-white.png">Trivia</h1>
+      <div id="qs">
+        
         <br>
         <div>
          <h2>Time Remaining: <div id="countdown">01:00</div></h2>
@@ -28,13 +34,13 @@
           <h2>WHAT IS A SHARK'S CEREBRUM RESPONSIBLE FOR?</h2> 
           <form id="q1">
             <div class="radio">
-              <label><input type="radio" name="optradio">Coordinating body movement</label>
+              <label><input class="wrong1" type="radio" name="optradio1">Coordinating body movement</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="optradio">Learning and memory</label>
+              <label><input class="right1" type="radio" name="optradio1">Learning and memory</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="optradio">Skin Protection</label>
+              <label><input class="wrong1" type="radio" name="optradio1">Skin Protection</label>
             </div>
           </form>
        
@@ -43,16 +49,16 @@
           <h2>WHAT'S THE NAME OF THE MASSIVE GREAT WHITE THAT WAS CAUGHT OFF THE COAST OF CUBA IN 1945?</h2> 
           <form id="q2">
             <div class="radio">
-              <label><input type="radio" name="optradio">El Monstruo</label>
+              <label><input class="right2" type="radio" name="optradio2">El Monstruo</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="optradio">El Coloso</label>
+              <label><input class="wrong2" type="radio" name="optradio2">El Coloso</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="optradio">The Megladon</label>
+              <label><input class="wrong2" type="radio" name="optradio2">The Megladon</label>
             </div>
             <div class="radio">
-              <label><input type="radio" name="optradio">El Gigantesco</label>
+              <label><input class="wrong2" type="radio" name="optradio2">El Gigantesco</label>
             </div>
           </form>
 
@@ -60,16 +66,16 @@
                 <h2>ABOUT HOW MANY TEETH DOES A GREAT WHITE HAVE?</h2> 
                 <form id="q3">
                   <div class="radio">
-                    <label><input type="radio" name="optradio">150</label>
+                    <label><input class="wrong3" type="radio" name="optradio3">150</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">300</label>
+                    <label><input class="right3" type="radio" name="optradio3">300</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">550</label>
+                    <label><input class="wrong3" type="radio" name="optradio3">550</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">1000</label>
+                    <label><input class="wrong3" type="radio" name="optradio3">1000</label>
                   </div>
                 </form>
 
@@ -77,16 +83,16 @@
                 <h2>WHICH OF THESE SHARKS IS A CLOSE RELATIVE OF THE OCEANIC WHITETIP?</h2> 
                 <form id="q4">
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Carribean reef shark</label>
+                    <label><input class="right4" type="radio" name="optradio4">Carribean reef shark</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Thresher shark</label>
+                    <label><input class="wrong4" type="radio" name="optradio4">Thresher shark</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Goblin shark</label>
+                    <label><input class="wrong4" type="radio" name="optradio4">Goblin shark</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Megamouth shark</label>
+                    <label><input class="wrong4" type="radio" name="optradio4">Megamouth shark</label>
                   </div>
                 </form>
 
@@ -94,16 +100,16 @@
                 <h2>THIS SPECIES OF HAMMERHEAD SHARK LOOKS NEARLY IDENTICAL TO SCALLOPED HAMMERHEAD SHARKS, EXCEPT FOR THE NUMBER OF VERTEBRAE ON THEIR BACKBONES.</h2> 
                 <form id="q5">
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Great Hammerhead</label>
+                    <label><input class="wrong5" type="radio" name="optradio5">Great Hammerhead</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Carolina Hammerhead</label>
+                    <label><input class="wrong5" type="radio" name="optradio5">Carolina Hammerhead</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Mallethead</label>
+                    <label><input class="wrong5" type="radio" name="optradio5">Mallethead</label>
                   </div>
                   <div class="radio">
-                    <label><input type="radio" name="optradio">Winghead</label>
+                    <label><input class="wrong5" type="radio" name="optradio5">Winghead</label>
                   </div>
                 </form>
                 <br>
@@ -120,23 +126,20 @@
     </div>
     
 <div class="container">
-   <div id="third">
+   <div id="theresults">
         <h1>Results</h1>
         <div>
-          <h3 class="good">Correct:</h3>
-          <!-- Our correct answers count -->
-          <div id="correct-answers"></div>
+          <h2 class="good">Correct: <div id="correct-answers"></div></h3>
         </div>
-        <div id="bad">
-          <h3 class="bad">Incorrect:</h3>
-          <!-- Our incorrect answers count -->
-          <div id="incorrect-answers"></div>
+
+        <div>
+          <h2 class="bad">Incorrect: <div id="incorrect-answers"></div></h3>  
         </div>
-        <div id="nope">
-          <h3 class="section-title">Unanswered:</h3>
-          <!-- Our unanswered count -->
-          <div id="unanswered-qs"></div>
+
+        <div>
+          <h2 class="section-title">Unanswered: <div id="unanswered-qs"></div></h3> 
         </div>
+
       </div>
     </div>
 
